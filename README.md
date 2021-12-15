@@ -17,8 +17,8 @@ from transformers import PreTrainedTokenizerFast, BartForConditionalGeneration
 model = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.3')
 tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-base-v2')
 ```
-### Realease note
-#### version 0
+### 📑 Realease note
+#### | version 0 |
   - 카카오 페이지의 판타지 소설(판타지+현판+로판) 데이터로 학습
   - `v0.1` : 2 epochs trained
   - `v0.2` : 5 epochs trained
