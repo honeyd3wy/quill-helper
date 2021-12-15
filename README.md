@@ -9,6 +9,21 @@ _“웹소설 제목은 왜 조금 다른 느낌일까?”_
 
 어떤 제목을 지어야 내용을 함축할 수 있을지, 이런 식의 작명이 익숙하지 않은 분들도 웹소설 작명기라면 그 짐을 조금은 덜 수 있을 것입니다.
 
+## 🤗 Hugging Face 🤗
+fine-tuning된 모델을 다음과 같이 transfomers 라이브러리에서 곧바로 가져다 사용할 수 있습니다!
+```python
+from transformers import PreTrainedTokenizerFast, BartForConditionalGeneration
+
+model = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.3')
+tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-base-v2')
+```
+### Realease note
+#### version 0
+  - 카카오 페이지의 판타지 소설(판타지+현판+로판) 데이터로 학습
+  - `v0.1` : 2 epochs trained
+  - `v0.2` : 5 epochs trained
+  - `v0.3` : 7 epochs trained
+
 ## Reference
 - [카카오 페이지 - 웹소설](https://page.kakao.com/main?categoryUid=11&subCategoryUid=11000)
 - [KoBART](https://github.com/SKT-AI/KoBART)
