@@ -9,7 +9,7 @@ _“웹소설 제목은 왜 조금 다른 느낌일까?”_
 
 어떤 제목을 지어야 내용을 함축할 수 있을지, 이런 식의 작명이 익숙하지 않은 분들도 『_Quill Helper_』 와 함께라면 그 짐을 조금은 덜 수 있을 것입니다.
 
-## Web Deployment
+## 🌐 Web Deployment
 ⚠ _[공사중입니다.](https://quill-helper.herokuapp.com/index)_ ⚠  
 
 ## 🤗 Hugging Face 🤗
