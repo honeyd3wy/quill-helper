@@ -9,9 +9,6 @@ _“웹소설 제목은 왜 조금 다른 느낌일까?”_
 
 어떤 제목을 지어야 내용을 함축할 수 있을지, 이런 식의 작명이 익숙하지 않은 분들도 『_Quill Helper_』 와 함께라면 그 짐을 조금은 덜 수 있을 것입니다.
 
-## 🌐 Web Deployment
-⚠ _[공사중입니다.](https://quill-helper.herokuapp.com/index)_ ⚠  
-
 ## 🤗 Hugging Face 🤗
 fine-tuning된 모델을 다음과 같이 transfomers 라이브러리에서 곧바로 가져다 사용할 수 있습니다!
 ```python
@@ -20,12 +17,33 @@ from transformers import PreTrainedTokenizerFast, BartForConditionalGeneration
 model = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.3')
 tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-base-v2')
 ```
+
+## FLASK API Deployment
+![image](https://user-images.githubusercontent.com/86245237/146728254-b00cf03b-026e-45e8-a152-26166b87286b.png)
+![image](https://user-images.githubusercontent.com/86245237/146728897-3d9af2db-de9d-4e80-9b04-f7fa2de32acf.png)
+![image](https://user-images.githubusercontent.com/86245237/146728987-3dd1bb99-deec-4d58-b4bf-c6592ce0bdec.png)
+![image](https://user-images.githubusercontent.com/86245237/146729046-15c7dd36-bc1e-4e75-ae5f-79ef01272726.png)
+
+### ▫ local
+```bash
+$ git clone https://github.com/honeyd3wy/quill-helper.git
+$ cd quill-helper-app
+$ pip install -r requirements.txt
+$ FLASK_APP=app flask run
+```
+
+### ▫ web
+⚠ _[공사중입니다.](https://quill-helper.herokuapp.com/index)_ ⚠  
+
 ### 📑 Realease note
 #### | version 0 |
   - 카카오 페이지의 판타지 소설(판타지+현판+로판) 데이터로 학습
   - `v0.1` : 2 epochs trained
   - `v0.2` : 5 epochs trained
   - `v0.3` : 7 epochs trained
+
+# 📋 Web Novel Analysis Report
+(작성중)
 
 ## Reference
 - [카카오 페이지 - 웹소설](https://page.kakao.com/main?categoryUid=11&subCategoryUid=11000)
