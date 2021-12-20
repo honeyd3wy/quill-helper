@@ -44,7 +44,7 @@ $ FLASK_APP=app flask run
 
 ---
 
-# 📋 Web Novel Analysis Report
+# 📋 Modeling & Web Novel Analysis Report
 (작성중)
 
 ---
@@ -53,3 +53,5 @@ $ FLASK_APP=app flask run
 - [카카오 페이지 - 웹소설](https://page.kakao.com/main?categoryUid=11&subCategoryUid=11000)
 - [KoBART](https://github.com/SKT-AI/KoBART)
 - [KoBART-summarization](https://github.com/seujung/KoBART-summarization)
+- [논문 - BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461)
+- [[Paper Review] BART (2020) - 우정's Log](https://wooodong.tistory.com/19?category=965248)
