@@ -35,15 +35,19 @@ $ FLASK_APP=app flask run
 ### ▫ web
 ⚠ _[공사중입니다.](https://quill-helper.herokuapp.com/index)_ ⚠  
 
-### 📑 Realease note
-#### | version 0 |
+## 📑 Realease note
+### | version 0 |
   - 카카오 페이지의 판타지 소설(판타지+현판+로판) 데이터로 학습
   - `v0.1` : 2 epochs trained
   - `v0.2` : 5 epochs trained
   - `v0.3` : 7 epochs trained
 
+---
+
 # 📋 Web Novel Analysis Report
 (작성중)
+
+---
 
 ## Reference
 - [카카오 페이지 - 웹소설](https://page.kakao.com/main?categoryUid=11&subCategoryUid=11000)
