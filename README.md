@@ -1,24 +1,42 @@
-# 🖋 _Quill Helper_
+# 🖋 _Quill Helper Project_
 >『환생했더니 공작 영애의 악역이 어쩌구...해버렸다?!』 이런 제목은 도대체 어떻게 짓는 거야? 웹소설 작명이 막막한 당신을 도와드려요!
 
 _“웹소설 제목은 왜 조금 다른 느낌일까?”_
 
-함축이 곧 미학인 일반적인 문학 소설 제목과 달리, 웹소설의 제목은 길이가 길거나 설명하는 문장형에 가까운 경우가 많습니다. 내용에 대한 정보 값이 충분히 있어야 하고, 소위 제목으로 '어그로'를 끌어야 작품이 흥한다는 말이 있을 정도죠.
+함축과 추상화가 곧 미학인 일반적인 문학 소설 제목과 달리, 웹소설의 제목은 길이가 길거나 **직관적으로 설명**하는 문장형에 가까운 경우가 많습니다. **내용에 대한 정보 값이 충분**히 있어야 하고, 소위 제목으로 '어그로'를 끌어야 작품이 흥한다는 말이 있을 정도죠.
 
-실제로 많은 사람들이 글을 쓰며 어려워하는 것 중 하나가 제목 짓기라는데, 많은 분들이 공감하실 거예요. 레포트를 제출할 때도, 블로그에 일상 포스팅 하나를 올리더라도 제목을 고민하게 되는데... 독자들에게 첫 인상이 되는 소설 제목은 더 신중하게 지어야 할 것입니다. 
+실제로 많은 사람들이 글을 쓰며 어려워하는 것 중 하나가 제목 짓기라는데, 많은 분들이 공감하실 거예요. 레포트를 제출할 때도, 블로그에 일상 포스팅 하나를 올리더라도 제목을 고민하게 되는데... 독자들에게 첫 인상이 되는 소설 제목은 더 신중하게 지어야 할 것입니다.
 
-어떤 제목을 지어야 내용을 함축할 수 있을지, 이런 식의 작명이 익숙하지 않은 분들도 『_Quill Helper_』 와 함께라면 그 짐을 조금은 덜 수 있을 것입니다.
+어떤 제목을 지어야 트렌드에 따라갈 수 있는 건지, 이런 식의 작명이 익숙하지 않은 분들도 『_Quill Helper_』 와 함께라면 그 짐을 조금은 덜 수 있을 것입니다.
 
-## 🤗 Hugging Face 🤗
+### 프로젝트 목표
+1. 웹소설 장르 별 제목 트렌드 분석
+2. 판타지 장르 웹 소설 작명기 어플리케이션 구현
+    - KoBART abstract summerization tasks fine-tuning
+
+## 📋 Web Novel Analysis & Modeling Report
+(작성중)
+
+---
+# Deployment
+
+## 1. 🤗 Hugging Face 🤗
 fine-tuning된 모델을 다음과 같이 transfomers 라이브러리에서 곧바로 가져다 사용할 수 있습니다!
+
 ```python
 from transformers import PreTrainedTokenizerFast, BartForConditionalGeneration
 
-model = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.3')
-tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-base-v2')
+# v0.1
+model_v1 = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.1')
+# v0.2
+model_v2 = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.2')
+# v0.3
+model_v3 = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.3')
 ```
 
-## FLASK API Deployment
+각 모델의 예시는 [여기](https://www.notion.so/pypyai/Report-Web-Novel-Data-Analysis-Naming-App-744614ee80e64e44ae10b5f6d284ff51#aa481001d1444f74833921cc1ae8c8ef)를 참고해주세요.
+
+## 2. FLASK API
 ![image](https://user-images.githubusercontent.com/86245237/146728254-b00cf03b-026e-45e8-a152-26166b87286b.png)
 ![image](https://user-images.githubusercontent.com/86245237/146728897-3d9af2db-de9d-4e80-9b04-f7fa2de32acf.png)
 ![image](https://user-images.githubusercontent.com/86245237/146728987-3dd1bb99-deec-4d58-b4bf-c6592ce0bdec.png)
@@ -41,11 +59,6 @@ $ FLASK_APP=app flask run
   - `v0.1` : 2 epochs trained
   - `v0.2` : 5 epochs trained
   - `v0.3` : 7 epochs trained
-
----
-
-# 📋 Modeling & Web Novel Analysis Report
-(작성중)
 
 ---
 
