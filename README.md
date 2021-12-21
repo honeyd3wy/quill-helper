@@ -7,7 +7,7 @@ _“웹소설 제목은 왜 조금 다른 느낌일까?”_
 
 실제로 많은 사람들이 글을 쓰며 어려워하는 것 중 하나가 제목 짓기라는데, 많은 분들이 공감하실 거예요. 레포트를 제출할 때도, 블로그에 일상 포스팅 하나를 올리더라도 제목을 고민하게 되는데... 독자들에게 첫 인상이 되는 소설 제목은 더 신중하게 지어야 할 것입니다.
 
-어떤 제목을 지어야 트렌드에 따라갈 수 있는 건지, 이런 식의 작명이 익숙하지 않은 분들도 『_Quill Helper_』 와 함께라면 그 짐을 조금은 덜 수 있을 것입니다.
+어떤 제목을 지어야 트렌드에 따라갈 수 있는 걸까요? 이런 식의 작명이 익숙하지 않은 분들도 『_Quill Helper_』 와 함께라면 그 짐을 조금은 덜 수 있을 것입니다.
 
 ### 프로젝트 목표
 1. 웹소설 장르 별 제목 트렌드 분석
@@ -24,7 +24,7 @@ _“웹소설 제목은 왜 조금 다른 느낌일까?”_
 fine-tuning된 모델을 다음과 같이 transfomers 라이브러리에서 곧바로 가져다 사용할 수 있습니다!
 
 ```python
-from transformers import PreTrainedTokenizerFast, BartForConditionalGeneration
+from transformers import BartForConditionalGeneration
 
 # v0.1
 model_v1 = BartForConditionalGeneration.from_pretrained('honeyd3wy/kobart-titlenaming-v0.1')
