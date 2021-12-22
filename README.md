@@ -14,7 +14,7 @@ _“웹소설 제목은 왜 조금 다른 느낌일까?”_
 2. 판타지 장르 웹 소설 작명기 어플리케이션 구현
     - KoBART abstract summerization tasks fine-tuning
 
-### 📋 [Web Novel Analysis & Modeling Report](https://www.notion.so/pypyai/Report-Web-Novel-Data-Analysis-Naming-App-744614ee80e64e44ae10b5f6d284ff51)
+### 📋 [Analysis & Modeling Report](https://www.notion.so/pypyai/Report-Web-Novel-Data-Analysis-Naming-App-744614ee80e64e44ae10b5f6d284ff51)
 
 ---
 # Deployment
